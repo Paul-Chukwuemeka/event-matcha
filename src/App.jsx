@@ -1,11 +1,11 @@
-import Landing from "./Pages/Landing";
-
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
 
 const App = () => {
   return (
-    <div>
-      <Landing />
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 };
 

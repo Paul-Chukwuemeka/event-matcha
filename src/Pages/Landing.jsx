@@ -46,33 +46,54 @@ const Landing = () => {
           <div className=" lg:border-r-2 max-lg:border-b-2 border-[#D1D1D1] flex flex-1 justify-center max-lg:justify-start max-lg:p-2 items-center gap-6">
             <img src={PeopleImg} alt="People" className="w-16" />
             <div className="flex flex-col gap-4 max-lg:gap-2">
-              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">13k+</h2>
-              <p className="text-xl max-lg:text-lg text-[#535353]">Event Needers</p>
+              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">
+                13k+
+              </h2>
+              <p className="text-xl max-lg:text-lg text-[#535353]">
+                Event Needers
+              </p>
             </div>
           </div>
           <div className=" lg:border-r-2 max-lg:border-b-2 border-[#D1D1D1] flex flex-1 justify-center max-lg:justify-start max-lg:p-2 items-center gap-6">
             <img src={Person} alt="People" className="w-16" />
             <div className="flex flex-col gap-4 max-lg:gap-2">
-              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">4.5k+</h2>
-              <p className="text-xl max-lg:text-lg text-[#535353]">Service Providers</p>
+              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">
+                4.5k+
+              </h2>
+              <p className="text-xl max-lg:text-lg text-[#535353]">
+                Service Providers
+              </p>
             </div>
           </div>
           <div className=" lg:border-r-2 max-lg:border-b-2 border-[#D1D1D1] flex flex-1 justify-center max-lg:justify-start max-lg:p-2 items-center gap-6">
             <img src={Planner} alt="People" className="w-16" />
             <div className="flex flex-col gap-4 max-lg:gap-2">
-              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">3k+</h2>
-              <p className="text-xl max-lg:text-lg text-[#535353]">Event Planners</p>
+              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">
+                3k+
+              </h2>
+              <p className="text-xl max-lg:text-lg text-[#535353]">
+                Event Planners
+              </p>
             </div>
           </div>
           <div className=" border-[#D1D1D1] flex flex-1 justify-center max-lg:justify-start max-lg:p-2 items-center gap-6">
             <img src={BookMark} alt="People" className="w-16" />
             <div className="flex flex-col gap-4 max-lg:gap-2">
-              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">34.5k+</h2>
-              <p className="text-xl max-lg:text-lg text-[#535353]">Successful Bookings</p>
+              <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">
+                34.5k+
+              </h2>
+              <p className="text-xl max-lg:text-lg text-[#535353]">
+                Successful Bookings
+              </p>
             </div>
           </div>
         </section>
-        
+        <section>
+          <h2>Why D’EventMatcha?</h2>
+          <div>
+            
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

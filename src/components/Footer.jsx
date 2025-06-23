@@ -7,7 +7,7 @@ import { IoIosChatboxes } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="bg-[#005F61] w-full py-10 px-20">
+    <div className="bg-[#005F61] w-full py-10 px-20 max-lg:px-10 max-md:px-6">
       <section className="flex justify-between flex-wrap max-md:flex-col p-6 space-x-10 space-y-10">
         <div className="flex flex-col gap-4 w-fit min-w-75">
           <img src={logo} alt="logo" className="w-60" />

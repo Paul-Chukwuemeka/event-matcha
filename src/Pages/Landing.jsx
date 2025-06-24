@@ -25,6 +25,11 @@ import {
   Featured7,
   Featured8,
   Featured9,
+  Avatar1,
+  Avatar2,
+  Avatar3,
+  Avatar4,
+  Avatar5,
 } from "../assets/index";
 
 const Landing = () => {
@@ -37,6 +42,7 @@ const Landing = () => {
       tag: "Weddings",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar1,
     },
     {
       src: Featured2,
@@ -46,6 +52,7 @@ const Landing = () => {
       tag: "Weddings",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar2,
     },
     {
       src: Featured3,
@@ -55,6 +62,7 @@ const Landing = () => {
       tag: "Venues",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar5,
     },
     {
       src: Featured4,
@@ -64,6 +72,7 @@ const Landing = () => {
       tag: "Owambe",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar1,
     },
     {
       src: Featured5,
@@ -73,6 +82,7 @@ const Landing = () => {
       tag: "Weddings",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar1,
     },
     {
       src: Featured6,
@@ -82,6 +92,7 @@ const Landing = () => {
       tag: "Weddings",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar4,
     },
     {
       src: Featured7,
@@ -91,6 +102,7 @@ const Landing = () => {
       tag: "Social Events",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar1,
     },
     {
       src: Featured8,
@@ -100,6 +112,7 @@ const Landing = () => {
       tag: "Couples",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar1,
     },
     {
       src: Featured9,
@@ -109,6 +122,7 @@ const Landing = () => {
       tag: "Wedding Reception",
       date: "Jan 10, 2023",
       host: "EventsByEva",
+      avatar: Avatar3,
     },
   ];
 
@@ -304,7 +318,7 @@ const Landing = () => {
             {FeaturedImages.map((image, index) => (
               <div
                 key={index}
-                className={`overflow-hidden cursor-pointer ${
+                className={`overflow-hidden cursor-pointer relative ${
                   image.new ? "border-4 border-[#E67505]" : ""
                 } ${image.style}`}
               >
@@ -313,6 +327,23 @@ const Landing = () => {
                   alt={image.alt}
                   className="w-full hover:scale-110  h-full object-cover rounded-lg"
                 />
+                <div className="absolute bottom-0 left-0  bg-opacity-80 p-4 w-full flex gap-2">
+                  <img
+                    src={image.avatar}
+                    alt=""
+                    className="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <p className="text-white text-lg font-semibold">
+                      {image.host}
+                    </p>
+                    <div className="flex space-x-2 space-y-1 items-center flex-wrap">
+                      <p className="text-white text-sm">{image.tag}</p>
+                      <div className="w-1 h-1 bg-white rounded-full"></div>
+                      <p className="text-white text-sm">{image.date}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

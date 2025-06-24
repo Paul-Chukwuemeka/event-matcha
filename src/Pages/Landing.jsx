@@ -7,7 +7,7 @@ import {
   PeopleImg,
   Person,
   Planner,
-  BookMark,
+  Bookmark,
   ProductShot,
   ReliableIcon,
   NetworkIcon,
@@ -33,60 +33,82 @@ const Landing = () => {
       src: Featured1,
       alt: "Featured 1",
       new: false,
-      style: "object-fit max-lg:col-[1/2] max-lg:row-[1/2]",
-      tag: "weddings",
+      style: "object-fit col-1 row-[1/3] max-lg:col-[1/2] max-lg:row-[1/2]",
+      tag: "Weddings",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured2,
       alt: "Featured 2",
       new: false,
-      style: "object-fit max-lg:row-[1/3]",
-      tag: "weddings",
+      style: "object-fit max-lg:row-[1/3] col-[2/3] row-[1/4]",
+      tag: "Weddings",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured3,
       alt: "Featured 3",
       new: false,
-      style: "object-fit max-lg:col-[1/2] max-lg:row-[4/7]",
-      tag: "venues",
+      style: "object-fit max-lg:col-[1/2] max-lg:row-[4/7] col-[3/4] row-[1/2]",
+      tag: "Venues",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured4,
       alt: "Featured 4",
       new: false,
-      style: "object-fit max-lg:col-[2/3] max-lg:row-[5/6]",
-      tag: "owambe",
+      style: "object-fit max-lg:col-[2/3] max-lg:row-[5/6] col-[4/5] row-[1/4]",
+      tag: "Owambe",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured5,
       alt: "Featured 5",
       new: false,
-      style: "object-fit max-lg:col-[2/3] max-lg:row-[6/8]",
-      tag: "owambe",
+      style: "object-fit max-lg:col-[2/3] max-lg:row-[6/8] col-[5/6] row-[1/4]",
+      tag: "Weddings",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured6,
       alt: "Featured 6",
       new: false,
-      style: "object-fit max-lg:col-[1/2] max-lg:row-[2/4]",
+      style: "object-fit max-lg:col-[1/2] max-lg:row-[2/4] col-[1/2] row-[3/5]",
+      tag: "Weddings",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured7,
       alt: "Featured 7",
       new: false,
-      style: "object-fit max-lg:col-[2/3] max-lg:row-[3/5]",
+      style: "object-fit max-lg:col-[2/3] max-lg:row-[3/5] col-[2/3] row-[4/5]",
+      tag: "Social Events",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured8,
       alt: "Featured 8",
       new: false,
-      style: "object-fit max-lg:col-[1/2] max-lg:row-[7/8]",
+      style: "object-fit max-lg:col-[1/2] max-lg:row-[7/8] col-[3/4] row-[2/5]",
+      tag: "Couples",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
     {
       src: Featured9,
       alt: "Featured 9",
       new: false,
-      style: "object-fit max-lg:col-[1/3] max-lg:row-[8/9]",
+      style: "object-fit max-lg:col-[1/3] max-lg:row-[8/9] col-[4/6] row-[4/5]",
+      tag: "Wedding Reception",
+      date: "Jan 10, 2023",
+      host: "EventsByEva",
     },
   ];
 
@@ -158,7 +180,7 @@ const Landing = () => {
             </div>
           </div>
           <div className=" border-[#D1D1D1] flex p-2 flex-1 justify-center max-lg:justify-start max-lg:p-2 items-center gap-6">
-            <img src={BookMark} alt="People" className="w-16" />
+            <img src={Bookmark} alt="People" className="w-16" />
             <div className="flex flex-col gap-4 max-lg:gap-2">
               <h2 className="font-semibold text-4xl max-lg:text-3xl  text-[#1E1E1E]">
                 34.5k+
@@ -278,7 +300,7 @@ const Landing = () => {
           <p className=" mt-5 mb-10 text-lg">
             See images of facilities and services from our users.
           </p>
-          <div className="w-full overflow-hidden gap-2 max-w-[1400px] h-[600px] rounded-4xl grid grid-cols-[1fr_1fr_1fr_25%_15%] grid-rows-[1fr_30px_70px_1fr] max-lg:grid-cols-2 max-lg:grid-rows-[18%_6%_13%_3%_17%_5%_16%_19%] max-lg:gap-2 max-lg:h-[1600px] max-lg:w-full">
+          <div className="w-full overflow-hidden gap-2 max-w-[1400px] border h-[750px] rounded-4xl grid grid-cols-[1fr_1fr_1fr_25%_15%] grid-rows-[1fr_30px_70px_1fr] max-lg:grid-cols-2 max-lg:grid-rows-[18%_6%_13%_3%_17%_5%_16%_19%] max-lg:gap-2 max-lg:h-[1600px] max-lg:w-full">
             {FeaturedImages.map((image, index) => (
               <div
                 key={index}

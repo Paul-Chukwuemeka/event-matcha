@@ -26,7 +26,7 @@ const Footer = () => {
           <li>Blog</li>
           <li>Releases</li>
         </ul>
-        <div className="text-white flex flex-col gap-4 w-full">
+        <div className="text-white flex flex-col gap-4">
           <p className="text-lg font-extrabold">Stay up to date</p>
           <p className="text-lg max-w-[450px] w-full">
             Be the first to know when we release new features, make improvements

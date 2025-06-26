@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong, FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { VscQuote } from "react-icons/vsc";
+import { FaUserAlt } from "react-icons/fa";
 import {
   HeroImg,
   Vector,
@@ -126,10 +128,34 @@ const Landing = () => {
     },
   ];
 
+  const testimonials = [
+    {
+      name: "John Doe",
+      feedback:
+        "D’EventMatcha made planning my wedding so easy! The service providers were top-notch and the platform was user-friendly.",
+    },
+    {
+      name: "Jane Smith",
+      feedback:
+        "I found the perfect venue for my corporate event through D’EventMatcha. Highly recommend it to anyone looking for event services.",
+    },
+    {
+      name: "Alice Johnson",
+      feedback:
+        "D’EventMatcha is a game-changer! I was able to find all the services I needed for my event in one place.",
+    },
+    {
+      name: "Bob Brown",
+      feedback:
+        "I had a fantastic experience with D’EventMatcha! The platform is intuitive and the customer support is excellent.",
+    },
+  ];
+  console.log(testimonials)
+
   return (
     <div className="grid grid-rows-[auto_1fr_auto] min-h-screen h-fit">
       <Header />
-      <main className="w-full">
+      <main className="w-full relative">
         <section className="flex max-lg:flex-col p-10 max-md:px-4  ">
           <div className="w-1/2 max-lg:w-full p-10 px-[8%] max-md:px-0 max-lg:px-10 flex flex-col gap-5 items-start justify-start">
             <h1 className="text-[3em] max-lg:text-[2.5em] max-md:text-[2em] font-bold max-lg:text-center">
@@ -314,20 +340,20 @@ const Landing = () => {
           <p className=" mt-5 mb-10 text-lg">
             See images of facilities and services from our users.
           </p>
-          <div className="w-full overflow-hidden gap-2 max-w-[1400px] border h-[750px] rounded-4xl grid grid-cols-[1fr_1fr_1fr_25%_15%] grid-rows-[1fr_30px_70px_1fr] max-lg:grid-cols-2 max-lg:grid-rows-[18%_6%_13%_3%_17%_5%_16%_19%] max-lg:gap-2 max-lg:h-[1600px] max-lg:w-full">
+          <div className="w-full overflow-hidden gap-2 max-w-[1400px] h-[750px] rounded-4xl grid grid-cols-[1fr_1fr_1fr_25%_15%] grid-rows-[1fr_30px_70px_1fr] max-lg:grid-cols-2 max-lg:grid-rows-[18%_6%_13%_3%_17%_5%_16%_19%] max-lg:gap-2 max-lg:h-[1600px] max-lg:w-full">
             {FeaturedImages.map((image, index) => (
               <div
                 key={index}
-                className={`overflow-hidden cursor-pointer relative ${
+                className={`overflow-hidden cursor-pointer relative  ${
                   image.new ? "border-4 border-[#E67505]" : ""
                 } ${image.style}`}
               >
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full hover:scale-110  h-full object-cover rounded-lg"
+                  className="w-full hover:scale-110 duration-750 h-full object-cover rounded-lg"
                 />
-                <div className="absolute bottom-0 left-0  bg-opacity-80 p-4 w-full flex gap-2">
+                <div className="absolute bottom-0 left-0 bg-opacity-80 p-4 w-full flex gap-2">
                   <img
                     src={image.avatar}
                     alt=""
@@ -346,6 +372,25 @@ const Landing = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+        <section className="flex flex-col items-center justify-center p-10 max-md:px-4 relative">
+          <h1 className="text-center text-4xl font-bold text-[#1E1E1E]">
+            Testimonials
+          </h1>
+          <p className="text-2xl font-medium my-2">
+            See what our users have to say.
+          </p>
+          <div className=" w-full max-w-[1000px] h-[400px] rounded-2xl p-5 flex flex-col border justify-center items-center gap-4 relative mt-10">
+            <button className="absolute top-1/2 cursor-pointer hover:text-[#005F61] -translate-x-1/2 -translate-y-1/2 left-0 bg-white p-5 rounded-full shadow-md">
+              <FaAngleLeft />
+            </button>
+            <button className="absolute top-1/2 cursor-pointer hover:text-[#005F61] translate-x-1/2 -translate-y-1/2 right-0 bg-white p-5 rounded-full shadow-md">
+              <FaAngleRight />
+            </button>
+            <div className="border w-[1600px] absolute left-8 h-full">
+
+            </div>
           </div>
         </section>
       </main>

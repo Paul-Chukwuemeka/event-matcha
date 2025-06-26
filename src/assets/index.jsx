@@ -29,6 +29,8 @@ import Planner from "./planner.png";
 import ProductShot from "./Product shot.png";
 import ReliableIcon from "./reliable-icon.png";
 import Vector from "./Vector 7.png";
+import VenueOwner from "./venue_Owner.png"
+import EventNeeder from "./Event_Needer.png"
 
 export {
   Avatar1,
@@ -62,4 +64,6 @@ export {
   ProductShot,
   ReliableIcon,
   Vector,
+  VenueOwner,
+  EventNeeder
 };

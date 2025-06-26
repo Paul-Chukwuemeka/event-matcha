@@ -2,8 +2,8 @@ import { FaRegUser, FaAngleDown } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
-    <div className="absolute h-fit w-full bg-white top-full left-0 pt-1 p-10 px-20 flex gap-5 flex-col lg:hidden">
-      <ul className="text-3xl font-light flex flex-col gap-3 *:cursor-pointer">
+    <div className="absolute h-fit w-full bg-white top-full left-0 pt-1 p-10 px-10 flex gap-5 flex-col lg:hidden">
+      <ul className="text-2xl font-light flex flex-col gap-3 *:cursor-pointer">
         <li>Home</li>
         <li>About</li>
         <li className="flex items-center gap-1">
